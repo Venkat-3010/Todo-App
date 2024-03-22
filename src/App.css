@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(155, 176, 230);
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.container{
+  max-width: 350px;
+  padding: 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.container > p {
+  font-size: 2rem;
+}
+
+.addATodo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.addATodo input{
+  width: 80%;
+  height: 2rem;
+  background-color: #DBE2EF;
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem ;
+  padding: 0.5rem;
+}
+
+.button{
+  width: 20%;
+  height: 2rem;
+  background-color: #AAAAAA;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.todosList{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-height: 200px;
+  overflow:scroll;
+  scrollbar-width: none;
+}
+
+.todosItems{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.listItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background-color: #DBE2EF;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.checkedItem{
+  opacity: 0.5;
+  color: #8888;
+}
+
+
